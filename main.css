@@ -151,21 +151,6 @@ body {
         margin: 5px 0px;
     }
 }
-.cakes-strawberrycake:hover,
-.cakes-redvelvet:hover,
-.cakes-vanillacake:hover,
-.cakes-chocolatecake:hover{                                                                                                             
-    .cakes-strawberrycake img,
-    .cakes-redvelvet img,
-    .cakes-vanillacake img,
-    .cakes-chocolatecake img{
-        max-width: 90%;
-        height: auto;
-    }
-
-}
-
-
 .cakes-strawberrycake h3,
 .cakes-redvelvet h3,
 .cakes-vanillacake h3,
