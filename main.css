@@ -151,6 +151,8 @@ body {
         margin: 5px 0px;
     }
 }
+
+
 .cakes-strawberrycake h3,
 .cakes-redvelvet h3,
 .cakes-vanillacake h3,
@@ -168,6 +170,7 @@ body {
 .cakes-chocolatecake p{
     font-size: 26px;
     font-family: 'Fira Sans', sans-serif;
+    padding: 0px 10px ;
 }
 .cakes-strawberrycake img,
 .cakes-redvelvet img,
@@ -197,6 +200,7 @@ body {
     color: #A21919;
     transition-property: color;
     transition-property: background-color;
+    transition-property: transform;
     transition-duration: 750ms;
 }
 .cakes-strawberrycake a:hover,
@@ -205,6 +209,7 @@ body {
 .cakes-chocolatecake a:hover{
     color: #FFF;
     background-color: #A21919;
+    transform: scale(1.2);
 }
 
 /*footer*/
@@ -224,6 +229,3 @@ body {
 #footer a{
     font-size: 18px;
 }
-
-
-
