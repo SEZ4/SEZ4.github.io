@@ -1,0 +1,238 @@
+body {
+    background-color: #D2C2C2;
+}
+
+#nav {
+    width: 100%;
+    height: 80px;
+    background-color: #F9EFEF;
+    border: 2px solid rgb(39, 34, 34);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+}
+.nav-back-button{
+    background-image: url("/Cakesite/pics/arrowbrown.png/");
+    background-size: 65px 45px;
+    width: 65px;
+    height: 45px;
+    margin-left: 10px;
+}
+.nav-back-button:hover{
+    background-image: url("/Cakesite/pics/arrowred.png/");
+}
+.nav-link-button {
+    font-size: 40px;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    color: #502704;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.nav-link-button:hover {
+    color: #A21919;
+    border-bottom: 3px solid #A21919;
+}
+
+#about {
+    width: 100%;
+    border: 2px solid rgb(39, 34, 34);
+    border-radius: 16px;
+    margin-top: 10px;
+    background-color: #F9EFEF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about-intro,
+.about-pic {
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+}
+.about-intro {
+    height: 450px;
+    border: 3px solid rgb(39, 34, 34);
+    background-color: #FFF;
+    border-radius: 16px;
+    margin: 20px 30px;
+    box-sizing: border-box;
+}
+.about-intro h1 {
+    font-size: 46px;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    color: #A21919;
+    text-align: center;
+}
+.about-intro p {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Fira Sans', sans-serif;
+    color: #E10909;
+    text-align: center;
+}
+.about-intro h2 {
+    font-size: 30px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #E10909;
+    text-align: center;
+    padding: 60px 0px 0px 0px;
+}
+.about-pic {
+    height: 450px;
+    border: 3px solid rgb(39, 34, 34);
+    background-color: #FFF;
+    border-radius: 16px;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.about-pic img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 16px;
+    border: 2px hidden;
+}
+.about-pic p {
+    font-size: 24px;
+    padding: 10px;
+}
+
+
+/* The Cake Div */
+#the-cakes{
+    width: 100%;
+    border: 2px solid rgb(39, 34, 34);
+    border-radius: 16px;
+    margin-top: 10px;
+    background-color: #F9EFEF;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* The Cake intro before the list */
+.cakes-intro{
+    display: flex;
+    justify-content: center;
+}
+.cakes-intro h2{
+    font-size: 46px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #502704;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+/* the cake list */
+.cakes-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cakes-strawberrycake,
+.cakes-redvelvet,
+.cakes-vanillacake,
+.cakes-chocolatecake{
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+    height: 650px;
+    border: 3px solid rgb(39, 34, 34);
+    border-radius: 16px;
+    background-color: #FFF;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    transition-property: max-width, height;
+    transition-duration: 750ms;
+}
+@media (max-width: 600px){
+    .cakes-strawberrycake,
+    .cakes-redvelvet,
+    .cakes-vanillacake,
+    .cakes-chocolatecake{
+        margin: 5px 0px;
+    }
+}
+
+
+.cakes-strawberrycake h3,
+.cakes-redvelvet h3,
+.cakes-vanillacake h3,
+.cakes-chocolatecake h3{
+    font-size: 36px;
+    font-family: 'Fira Sans', sans-serif;
+    color: #5A1D18;
+    text-align: center;
+    margin: 10px 0px;
+    box-sizing: border-box;
+}
+.cakes-strawberrycake p,
+.cakes-redvelvet p,
+.cakes-vanillacake p,
+.cakes-chocolatecake p{
+    font-size: 26px;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0px 10px ;
+}
+.cakes-strawberrycake img,
+.cakes-redvelvet img,
+.cakes-vanillacake img,
+.cakes-chocolatecake img{
+    border: 2px hidden;
+    border-radius: 16px;
+    max-width: 80%;
+    max-height: auto;
+}
+.cakes-strawberrycake a,
+.cakes-redvelvet a,
+.cakes-vanillacake a,
+.cakes-chocolatecake a{
+    text-align: center;
+    border: 2px solid #5A1D18;
+    background-color: #F9EFEF;
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: 25px;
+    width: 150px;
+    box-sizing: border-box;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #A21919;
+    transition-property: color;
+    transition-property: background-color;
+    transition-duration: 750ms;
+}
+.cakes-strawberrycake a:hover,
+.cakes-redvelvet a:hover,
+.cakes-vanillacake a:hover,
+.cakes-chocolatecake a:hover{
+    color: #FFF;
+    background-color: #A21919;
+}
+
+/*footer*/
+#footer h2{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+#footer p{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+}
+.whomade{
+    float: right;
+    color:#A21919;
+}
+#footer a{
+    font-size: 18px;
+}
