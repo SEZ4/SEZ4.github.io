@@ -12,14 +12,14 @@ body {
     align-items: center;
 }
 .nav-back-button{
-    background-image: url("/mats/cakesite_mats/arrowbrown.png/");
+    background-image: url("/sez4.github.io/mats/cakesite_mats/arrowbrown.png/");
     background-size: 65px 45px;
     width: 65px;
     height: 45px;
     margin-left: 10px;
 }
 .nav-back-button:hover{
-    background-image: url("/mats/cakesite_mats/arrowred.png/");
+    background-image: url("/sez4.github.io/mats/cakesite_mats/arrowred.png/");
 }
 .nav-link-button {
     font-size: 40px;
