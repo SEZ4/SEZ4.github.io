@@ -12,14 +12,14 @@ body {
     align-items: center;
 }
 .nav-back-button{
-    background-image: url("/Cakesite/pics/arrowbrown.png/");
+    background-image: url("/mats/cakesite_mats/arrowbrown.png/");
     background-size: 65px 45px;
     width: 65px;
     height: 45px;
     margin-left: 10px;
 }
 .nav-back-button:hover{
-    background-image: url("/Cakesite/pics/arrowred.png/");
+    background-image: url("/mats/cakesite_mats/arrowred.png/");
 }
 .nav-link-button {
     font-size: 40px;
