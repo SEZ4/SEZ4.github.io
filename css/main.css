@@ -34,7 +34,11 @@ body{
     margin: 0px 0px 0px 30px;
     box-sizing: border-box;
 }
-
+/* if card is blocked Only work when the class blocked is given to elemnet */
+.blocked{
+    pointer-events: none;
+    opacity: 0.5;
+}
 /* Project List */
 #projects{
     display: flex;
