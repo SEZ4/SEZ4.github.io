@@ -47,7 +47,7 @@ body{
 }
 
 /* Project List */
-#projects{
+.projects{
     display: flex;
     width: 100%;
     max-width: 100%;
@@ -55,7 +55,7 @@ body{
     flex-wrap: wrap;
     margin-top: 45px;
 }
-#projects-card{
+.projects-card{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -96,7 +96,7 @@ body{
     margin: 0px 0px 0px 5px;
     transition-duration: 750ms;
 }
-#projects-card:hover{
+.projects-card:hover{
     transform: scale(1.2);
     .projects-card-text p,
     .projects-card-text h3{
