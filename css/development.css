@@ -130,7 +130,7 @@ body{
         grid-column: 1 / 4;
     }
 }
-@media (max-width: 350px){
+@media (max-width: 400px){
     .notes-card{
         background-color: #DBE9EE;
         border-top: solid 2px #0e315d;
