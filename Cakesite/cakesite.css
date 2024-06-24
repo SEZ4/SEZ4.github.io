@@ -191,7 +191,7 @@ body{
         grid-template-columns: auto;
     }
 }
-@media (max-width: 420px){
+@media (max-width: 450px){
     .header-info > h1{
         font-size: 30px;
     }
