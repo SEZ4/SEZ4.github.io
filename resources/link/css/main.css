@@ -1,0 +1,129 @@
+body{
+    background-color: #DBE9EE;
+}
+
+.header{
+    background-color: #466995;
+    border: 3px solid #275a97;
+    border-radius: 16px;
+    width: 100%;
+    min-height: 115px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    align-items: center;
+    justify-content: start;
+    box-sizing: border-box;
+}
+.header > a{
+    grid-row: 1 / 3;
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    transition: all 1500ms ease;
+}
+.header > a > img{
+    width: 60px;
+    height: 60px;
+}
+.header > a:hover{
+    rotate: 360deg;
+}
+.header > h1{
+    margin: 10px 0 0 0;
+    color: #e6f1fe;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+.header > p{
+    margin: 0 0 10px 0;
+    color: #e6f1fed7;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;   
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0;
+    
+}
+.projects > a{
+    background-color: #466995;
+    border: 3px solid #275a97;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    text-decoration: none;
+    transition: all 750ms;
+    margin: 20px 0 40px 40px;
+}
+.projects > a > img{
+    width: 300px;
+    height: 265px;
+    border-radius: 16px 16px 0 0;
+    border-bottom: 3px solid #275a97;
+    box-sizing: border-box;
+}
+.projects > a > div > h3{
+    margin: 0 0 0 5px;
+    color: #e6f1fe;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    transition: color 750ms;
+}
+.projects > a > div > p{
+    margin: 5px 0 0 5px;
+    color: #e6f1fe;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    transition: color 750ms;
+}
+.projects a:hover{
+    transform: scale(1.2);
+    div h3,
+    div p{
+        color: #342a2a;
+    }
+}
+
+@media (max-width: 520px){
+    .projects{
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects > a{
+        display: flex;
+        max-width: none;
+        margin: 10px 0;
+        align-items: center;
+        height: 200px;
+        width: 90%;
+    }
+    .projects > a:hover{
+        transform: scale(1.1);
+    }
+    .projects > a > img{
+        border-radius: 16px;
+        border-bottom: none;
+        width: 40%;
+        height: auto;
+        margin: 0 10px;
+    }
+}
+@media (max-width: 420px){
+    .header > h1{
+        font-size: 8.143vw;
+    }
+    .header > p{
+        font-size: 3.81vw;
+    }
+    .projects > a > div > h3{
+        font-size: 6.714vw;
+    }
+    .projects > a > div > p{
+        font-size: 4.81vw;
+    }
+}
