@@ -1,0 +1,244 @@
+body{
+    background-color: #dbe9ee;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,p{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --norFontColor: #324c6d;
+    --backFontColor: #FFF;
+    --cardBackgroundColor: #365986;
+    --cardBorderColor: #275a97;
+}
+.nav-hidden-menu{
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: var(--cardBackgroundColor);
+    border: 3px solid var(--cardBorderColor);
+    border-radius: 0 16px 0 0;
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+}
+.nav-hidden-menu-JS-open-fun{
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+.nav-hidden-menu > a{
+    color: var(--backFontColor);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin: 5px 0;
+    transition: opacity 150ms ease-in-out;
+}
+.nav-hidden-menu > a:focus,
+.nav-hidden-menu > button:focus{
+    opacity: 0.5;
+}
+.nav-hidden-menu > a[lang]{
+    width: fit-content;
+    border: 2px solid var(--backFontColor);
+    border-radius: 8px;
+    letter-spacing: normal;
+    padding: 0 5px 10px 5px;
+    text-align: center;
+    margin-top: 10px;
+}
+.nav-hidden-menu > button{
+    border: none;
+    background-color: transparent;
+    text-align: start;
+    margin: 10px 0;
+    transition: opacity 150ms ease-in-out;
+    width: 50px;
+}
+.nav-hidden-menu > button > img{
+    max-width: 50px;
+    height: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+nav > div > a{
+    color: var(--norFontColor);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 0 10px;
+    transition: opacity 150ms ease-in-out;
+}
+nav > div > button{
+    border: none;
+    background-color: transparent;
+    display: none;
+    margin-top: 20px;
+    transition: opacity 150ms ease-in-out;
+}
+nav > div > button > img{
+    max-width: 50px;
+}
+.nav-langButton{
+    color: var(--norFontColor);
+    font-size: 28px;
+    text-decoration: none;
+    border: 2px solid #324c6d;
+    border-radius: 8px;
+    padding: 0 10px 5px 10px;
+    margin-right: 10px;
+    transition: opacity 150ms;
+}
+.nav-langButton:hover,
+nav > div > a:hover,
+nav > div > button:hover{
+    opacity: 0.5;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 40px 0;
+}
+.projects > a{
+    background-color: var(--cardBackgroundColor);
+    border: 3px solid var(--cardBorderColor);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    text-decoration: none;
+    transition: all 750ms;
+    margin: 20px 0 40px 40px;
+}
+.card-note{
+    font-size: 16px;
+    color: #000;
+    background-color: rgb(255, 255, 98);
+    position: absolute;
+    z-index: 1;
+    border-radius: 0 16px 16px 0;
+    margin: 20px 0;
+    padding: 0 10px;
+}
+.projects > a > img{
+    width: 300px;
+    height: 265px;
+    border-radius: 16px 16px 0 0;
+    border-bottom: 3px solid var(--cardBorderColor);
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0;
+}
+.projects > a > div > h3{
+    margin: 0 0 0 5px;
+    color: var(--backFontColor);
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    transition: color 750ms;
+}
+.projects > a > div > p{
+    margin: 5px 0 0 5px;
+    color: var(--backFontColor);
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    transition: color 750ms;
+}
+.projects a:hover{
+    transform: scale(1.2);
+    div h3,
+    div p{
+        color: #342a2a;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        margin: 0;
+    }
+    nav > div > a{
+        display: none;
+    }
+    .nav-hidden-menu{
+        display: flex;
+    }
+    nav > div > button{
+        display: flex;
+    }
+    .nav-langButton{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 520px){
+    .projects{
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects > a{
+        display: flex;
+        max-width: none;
+        margin: 10px 0;
+        align-items: center;
+        height: 200px;
+        width: 90%;
+    }
+    .projects > a:hover{
+        transform: scale(1.1);
+    }
+    .projects > a > img{
+        border-radius: 16px;
+        border-bottom: none;
+        width: 40%;
+        height: auto;
+        margin: 0 10px;
+    }
+    .card-note{
+        align-self: flex-start;
+        margin: 20px 10px;
+        font-size: 3.077vw;
+    }
+}
+@media (max-width: 422px){
+    .header > h1{
+        font-size: 8.143vw;
+    }
+    .header > p{
+        font-size: 3.81vw;
+    }
+    .projects > a > div > h3{
+        font-size: 6.714vw;
+    }
+    .projects > a > div > p{
+        font-size: 4.81vw;
+    }
+    .card-note{
+        align-self: center;
+        margin: 0 0 80px 0;
+    }
+    .nav-hidden-menu{
+        width: 80%;
+    }
+    .nav-hidden-menu > a{
+        font-size: 24px;
+    }
+}
+@media (max-width: 320px){
+    .nav-hidden-menu > a{
+        font-size: 20px;
+    }
+}
