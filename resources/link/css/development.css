@@ -139,23 +139,20 @@ nav > div > button:hover{
 }
 .notes-card h3{
     font-size: 30px;
-    font-family: 'Open-Sans', sans-serif;
-    color: #e6f1fe;
+    color: var(--backFontColor);
     margin: 20px 0 0 0;
 }
 .notes-card h4{
     grid-column: 2 / 4;
     margin: 0;
     font-size: 18px;
-    font-family: 'Open-Sans', sans-serif;
-    color: #e6f1fe;
+    color: var(--backFontColor);
 }
 .notes-card p{
     justify-self: end;
     font-size: 20px;
     margin: 20px 10px 0 0;
-    font-family: 'Open-Sans' sans-serif;
-    color: #e6f1fe;
+    color: var(--backFontColor);
 }
 .notes-page-nav{
     display: flex;
@@ -183,8 +180,7 @@ nav > div > button:hover{
 .notes-page-nav p{
     font-size: 40px;
     margin: 0;
-    font-family: 'Open-Sans', sans-serif;
-    color: #e6f1fe;
+    color: var(--backFontColor);
 }
 
 @media (max-width: 768px){
@@ -220,8 +216,6 @@ nav > div > button:hover{
     .nav-hidden-menu > a{
         font-size: 24px;
     }
-}
-@media (max-width: 325px){
     .notes-card{
         background-color: #DBE9EE;
         border-top: solid 2px #0e315d;
