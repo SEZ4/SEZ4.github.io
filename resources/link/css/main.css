@@ -67,6 +67,9 @@ h1,h2,h3,p{
     margin: 10px 0;
     transition: opacity 150ms ease-in-out;
     width: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 .nav-hidden-menu > button > img{
     max-width: 50px;
@@ -92,6 +95,9 @@ nav > div > button{
     display: none;
     margin-top: 20px;
     transition: opacity 150ms ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;    
 }
 nav > div > button > img{
     max-width: 50px;
@@ -232,6 +238,9 @@ header{
     margin: 10px;
     cursor: pointer;
     transition: background-color 150ms ease-in-out, border 150ms ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;    
 }
 .education-button-active{
     background-color: #0d1a29 !important;
@@ -276,6 +285,9 @@ header{
     position: relative;
     z-index: 1;
     transition: color 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;    
 }
 #background-highlight {
     position: absolute;
@@ -416,6 +428,9 @@ header{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 .certificate-wraper > button:active{
     transform: translateY(2px);
@@ -477,6 +492,9 @@ header{
     padding-left: 10px;
     box-shadow: 3px 5px var(--cardBackgroundColor);
     transition: box-shadow 150ms ease-in-out, border 150ms ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 .contact > form > input:focus,
 .contact > form > textarea:focus,
@@ -497,6 +515,9 @@ header{
     box-shadow: 3px 5px var(--cardBackgroundColor);
     transition: box-shadow 150ms ease-in-out, border 150ms ease-in-out;
     resize: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 .contact > form > button{
     width: 100%;
@@ -510,6 +531,9 @@ header{
     font-size: 18px;
     box-shadow: 3px 5px var(--cardBackgroundColor);
     transition: box-shadow 150ms ease-in-out, border 150ms ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 @media (max-width: 1024px){
