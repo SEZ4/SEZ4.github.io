@@ -624,6 +624,13 @@ header{
     .header-name > p{
         font-size: 15px;
     }
+    .header-div-socails{
+        display: flex;
+        justify-content: center;
+    }
+    .header-div-socails > a{
+        margin: 0 15px;
+    }
     .header-div-socails > a > img{
         width: 45px;
         height: auto;
