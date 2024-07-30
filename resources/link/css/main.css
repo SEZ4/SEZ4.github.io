@@ -627,6 +627,7 @@ header{
     .header-div-socails{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .header-div-socails > a{
         margin: 0 15px;
