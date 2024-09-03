@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'PoF-Responsive', 'PoF-UserInteraction']
     
     let portfolioButtonNumber;
-    let portfolioOneTimeButton;
+    let portfolioOneTimeButton = portfolioNavButtons[0];
     function portfolio_highLight_align(buttonSize, buttonWraperSize) {
         portfolioNavHighLight.style.width = `${buttonSize.width}px`;
         portfolioNavHighLight.style.height = `${buttonSize.height}px`;
