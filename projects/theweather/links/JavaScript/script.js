@@ -218,25 +218,25 @@ document.addEventListener('DOMContentLoaded', function() {
         'NNW': { name: 'North North West', rotate: '337deg' }
     };
     const statusImgObject = { // add 'shorter' to the object to short HTML element text
-        'Clear': { path: '../../images/status/clear.png', alt: 'Clear Wehter Icon'},
-        'Sunny': { path: '../../images/status/sunny.png', alt: 'Sunny Icon'},
-        'Overcast': { path: '../../images/status/overcast.png', alt: 'Overcast icon'},
-        'Overcast ': { path: '../../images/status/overcast.png', alt: 'Overcast icon'},
-        'Patchy rain nearby' : { path: '../../images/status/Patchy rain nearby.png', alt: 'Patchy rain nearby icon'},
-        'Light rain': { path: '../../images/status/light-rain.png', alt: 'Light Rain icon'},
-        'Light drizzle': { path: '../../images/status/light-rain.png', alt: 'Light Dizzle icon'},
-        'Light rain shower': { path: '../../images/status/light rain shower.png', alt: 'light rain shower icon'},
-        'Cloudy': { path: '../../images/status/cloudy.png', alt: 'Cloudy Icon'},
-        'Cloudy ': { path: '../../images/status/cloudy.png', alt: 'Cloudy Icon'},
-        'Partly cloudy': {path: '../../images/status/partly-cloudy.png', alt: 'partly Cloudy Icon'},
-        'Partly Cloudy': {path: '../../images/status/partly-cloudy.png', alt: 'partly Cloudy Icon'},
-        'Partly Cloudy ': {path: '../../images/status/partly-cloudy.png', alt: 'partly Cloudy Icon'},
-        'Mist': { path: '../../images/status/mist.png', alt: 'Mist icon'},
-        'Fog': { path: '../../images/status/fog.png', alt: 'Fog icon'},
-        'Thundery outbreaks in nearby': { path: '../../images/status/thunder.png', alt: 'thunder icon'},
-        'Moderate or heavy rain shower': { path: '../../images/status/light rain shower.png', alt: 'light rain shower icon', shorter: 'Moderate rain shower'},
-        'Moderate or heavy rain with thunder': { path: '../../images/status/thunder.png', alt: 'thunder icon', shorter: 'Moderate rain with thunder'},
-        'Patchy light drizzle': { path: '../../images/status/light-rain.png', alt: 'Light rain icon'}
+        'Clear': { path: 'theweather/images/status/clear.png', alt: 'Clear Wehter Icon'},
+        'Sunny': { path: 'theweather/images/status/status/sunny.png', alt: 'Sunny Icon'},
+        'Overcast': { path: 'theweather/images/status/status/overcast.png', alt: 'Overcast icon'},
+        'Overcast ': { path: 'theweather/images/status/status/overcast.png', alt: 'Overcast icon'},
+        'Patchy rain nearby' : { path: 'theweather/images/status/status/Patchy rain nearby.png', alt: 'Patchy rain nearby icon'},
+        'Light rain': { path: 'theweather/images/status/status/light-rain.png', alt: 'Light Rain icon'},
+        'Light drizzle': { path: 'theweather/images/status/status/light-rain.png', alt: 'Light Dizzle icon'},
+        'Light rain shower': { path: 'theweather/images/status/status/light rain shower.png', alt: 'light rain shower icon'},
+        'Cloudy': { path: 'theweather/images/status/status/cloudy.png', alt: 'Cloudy Icon'},
+        'Cloudy ': { path: 'theweather/images/status/status/cloudy.png', alt: 'Cloudy Icon'},
+        'Partly cloudy': {path: 'theweather/images/status/status/partly-cloudy.png', alt: 'partly Cloudy Icon'},
+        'Partly Cloudy': {path: 'theweather/images/status/status/partly-cloudy.png', alt: 'partly Cloudy Icon'},
+        'Partly Cloudy ': {path: 'theweather/images/status/status/partly-cloudy.png', alt: 'partly Cloudy Icon'},
+        'Mist': { path: 'theweather/images/status/status/mist.png', alt: 'Mist icon'},
+        'Fog': { path: 'theweather/images/status/status/fog.png', alt: 'Fog icon'},
+        'Thundery outbreaks in nearby': { path: 'theweather/images/status/status/thunder.png', alt: 'thunder icon'},
+        'Moderate or heavy rain shower': { path: 'theweather/images/status/status/light rain shower.png', alt: 'light rain shower icon', shorter: 'Moderate rain shower'},
+        'Moderate or heavy rain with thunder': { path: 'theweather/images/status/status/thunder.png', alt: 'thunder icon', shorter: 'Moderate rain with thunder'},
+        'Patchy light drizzle': { path: 'theweather/images/status/status/light-rain.png', alt: 'Light rain icon'}
     };
 
     // Logical Operations
@@ -245,9 +245,9 @@ document.addEventListener('DOMContentLoaded', function() {
         let numTime = time.slice(0, 2);
         numTime = parseInt(numTime, 10);
         if (numTime >= 19 || numTime < 6){
-            cityDayStatus.setAttribute('src', '../../images/day-night/night.png')
+            cityDayStatus.setAttribute('src', 'theweather/images/day-night/night.png')
         } else if (numTime >= 6){
-            cityDayStatus.setAttribute('src', '../../images/day-night/day.png')
+            cityDayStatus.setAttribute('src', 'theweather/images/day-night/day.png')
         }
     }
     function convertTime(time){
