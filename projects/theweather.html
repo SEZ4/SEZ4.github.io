@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title id="site-title">Qais's Weather</title>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.5">
+        <meta name="description" content="Qais's Weather Simple Weather info site">
+        <meta property="og:title" content="Qais's Weather">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://sez4.github.io/projects/theweather.html">
+        <meta property="og:image" content="theweather/links/images/status/cloudy.png">
+        <meta property="og:description" content="Qais's Weather Simple Weather info site">
+        <meta name="author" content="Qais Ashram">
+        <meta name="robots" content="">
+
+        <link rel="icon" href="theweather/links/images/status/cloudy.png" type="image/x-icon" id="site-icon">
+        <link rel="stylesheet" href="theweather/links/css/style.css">
+        <link rel="canonical" href="https://sez4.github.io/index">
+
+        <script src="theweather/links/JavaScript/script.js" defer></script>
+        <script src="theweather/links/JavaScript/CityNamesStatus.js" defer></script>
+        <script src="theweather/links/JavaScript/cityButtonsAlign.js" defer></script>
+    </head>
+    <body>
+        </div>
+        <div class="map-popup" id="popup-menu">
+            <div class="popup">
+                <div>
+                    <a href="https://www.ventusky.com" target="_blank">Full Map</a>
+                    <p>The Ventusky Weather Map</p>
+                    <button id="popup-close-button"><img src="theweather/images/global/close.png"></button>
+                </div>
+                <iframe src="https://www.ventusky.com" title="Ventusky Map"></iframe>
+            </div>
+        </div>
+        <nav>
+            <a href="#"><img src="theweather/images/global/back_button.png" alt="Back button"></a>
+            <div>
+                <button class="nav-hidden-button" name="The Map Button" id="map-button2"><img src="theweather/images/global/map.png"></button>
+                <button class="nav-hidden-button" name="The refresh Button" id="refresh-button2"><img src="theweather/images/global/refresh-arrow.png"></button>
+                <button id="cityButtons-menu-button">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+            </div>
+            <!--<button><img src="imges/setting.png" alt="settings Button"></button> Settings Menu To be added later-->
+        </nav>
+        <div class="main">
+            <div class="cityButton">
+                <div class="cityButton-search">
+                    <button id="search-city-button"><img src="theweather/images/global/search-icon.png" alt="search icon"></button>
+                    <input type="text" name="search text felid" id="search-city-input" autocomplete="off">
+                    <p id="search-error"></p>
+                </div>
+                <div class="cityButton-buttons">
+                    <button class="city-button-name">
+                        <img src="" alt="">
+                        <p>Amman</p>
+                    </button>
+                    <button class="city-button-name">
+                        <img src="" alt="">
+                        <p>London</p>
+                    </button>
+                    <button class="city-button-name">
+                        <img src="" alt="">
+                        <p>Kabul</p>
+                    </button>
+                    <button class="city-button-name">
+                        <img src="" alt="">
+                        <p>New York</p>
+                    </button>
+                    <button class="city-button-name">
+                        <img src="" alt="">
+                        <p>Makkah</p>
+                    </button>
+                    <button class="city-button-name">
+                        <img src="" alt="">
+                        <p>Tokyo</p>
+                    </button>
+                    <button class="city-button-name">
+                        <img src="" alt="">
+                        <p>Algiers</p>
+                    </button>
+                    <div id="background-highlight"></div>
+                </div>
+            </div>
+            <div class="cityInfo">
+                <div class="cityInfo-header">
+                    <div class="cityInfo-header-info">
+                        <img src="theweather/images/day-night/day.png" alt="night day" id="day-status">
+                        <p class="cityInfo-header-cityName" id="city-name"></p>
+                        <p id="country-name"></p>
+                        <p id="city-time"></p>
+                        <p id="city-date"></p>
+                    </div>
+                    <div class="cityInfo-header-button">
+                        <button name="The Map Button" id="map-button"><img src="theweather/images/global/map.png"></button>
+                        <button name="The refresh Button" id="refresh-button"><img src="theweather/images/global/refresh-arrow.png"></button>
+                    </div>
+                </div> 
+                <div class="cityInfo-current">
+                    <h2>Current</h2>
+                    <div>
+                        <p id="current-temp"></p>
+                        <div>
+                            <img id="weather-status-img">
+                            <p id="weather-status"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cityInfo-wind">
+                    <h2>Wind</h2>
+                    <div>
+                        <div>
+                            <img src="theweather/images/global/wind-arrow.png" alt="arrow icon" id="wind-dir-img">
+                            <p id="wind-dir"></p>
+                        </div>
+                        <p id="wind-speed"></p>
+                    </div>
+                </div>
+                <div class="cityInfo-misc">
+                    <p id="humidity"></p>
+                    <p class="cityInfo-misc-uv" id="uv-light"></p>
+                </div>
+                <div class="cityInfo-forecast">
+                    <h2>Forecast</h2>
+                    <div>
+                        <div class="cityInfo-forecast-day">
+                            <img src="" id="forecast-status-img-0">
+                            <p id="forecast-status-0"></p>
+                            <p id="forecast-temp-0"></p>
+                            <img src="theweather/images/global/wind-arrow.png" id="forecast-wind-dir-img-0">
+                            <p id="forecast-wind-speed-0"></p>
+                            <p id="forecast-date-0"></p>
+                        </div>
+                        <div class="cityInfo-forecast-day">
+                            <img src="" id="forecast-status-img-1">
+                            <p id="forecast-status-1"></p>
+                            <p id="forecast-temp-1"></p>
+                            <img src="theweather/images/global/wind-arrow.png" id="forecast-wind-dir-img-1">
+                            <p id="forecast-wind-speed-1"></p>
+                            <p id="forecast-date-1"></p>
+                        </div>
+                        <div class="cityInfo-forecast-day">
+                            <img src="" id="forecast-status-img-2">
+                            <p id="forecast-status-2"></p>
+                            <p id="forecast-temp-2"></p>
+                            <img src="theweather/images/global/wind-arrow.png" id="forecast-wind-dir-img-2">
+                            <p id="forecast-wind-speed-2"></p>
+                            <p id="forecast-date-2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h2>Thank You For Visting The Weather Site</h2>
+            <p>All Data Is Pulled From <a href="https://www.weatherapi.com/">weatherapi.com</a> and Weather Map from <a href="https://www.ventusky.com/">ventusky.com</a><span>Made By Qais Ashram</span></p>
+            <a href="https://www.youtube.com/channel/UC1dk6w3AlzAnKZtpKl1uDuQ">See me making this website</a>
+        </footer>
+    </body>
+</html>
