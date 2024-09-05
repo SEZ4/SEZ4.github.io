@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     let hour = parseInt(time.split(':')[0], 10);
                     const img = button.children[0];
                     if(hour >= 19 || hour < 6){
-                        img.setAttribute('src', '../../images/day-night/night.png');
+                        img.setAttribute('src', 'theweather/images/day-night/night.png');
                         img.setAttribute('alt', 'Moon Image / Night')
                     } else{
-                        img.setAttribute('src', '../../images/day-night/day.png');
+                        img.setAttribute('src', 'theweather/images/day-night/day.png');
                         img.setAttribute('alt', 'Sun Image / day');
                     }
                 })
