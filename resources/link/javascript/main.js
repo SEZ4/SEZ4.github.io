@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const portfolioCards = [document.getElementById('portfolio-cakesite-card'), document.getElementById('portfolio-qaisnews-card'),];
     const portfolioFilterClasses = ['PoF-CSSGrid', 'PoF-EShop', 'PoF-MultiPage', 'PoF-JavaScript', 'PoF-RegisterPage',
-        'PoF-Responsive', 'PoF-UserInteraction']
+        'PoF-Responsive', 'PoF-UserInteraction', 'PoF-ApiIntegration']
     
     let portfolioButtonNumber;
     let portfolioOneTimeButton = portfolioNavButtons[0];
