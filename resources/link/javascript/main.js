@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const portfolioNavHighLight = document.getElementById('background-highlight');
     const portfolioButtonWraper = document.querySelector('.portfolio-nav');
 
-    const portfolioCards = [document.getElementById('portfolio-cakesite-card'), document.getElementById('portfolio-qaisnews-card'),];
+    const portfolioCards = [document.getElementById('portfolio-cakesite-card'), document.getElementById('portfolio-qaisnews-card'), document.getElementById('portfolio-theweather-card')];
     const portfolioFilterClasses = ['PoF-CSSGrid', 'PoF-EShop', 'PoF-MultiPage', 'PoF-JavaScript', 'PoF-RegisterPage',
         'PoF-Responsive', 'PoF-UserInteraction', 'PoF-ApiIntegration']
     
