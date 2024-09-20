@@ -133,7 +133,7 @@ header{
     color: var(--norFontColor);
     font-size: 80px;
 }
-.header-name > h3{
+.header-name > h2{
     color: var(--norFontColor);
     font-size: 35px;
     letter-spacing: 4px;
@@ -464,6 +464,9 @@ header{
 }
 .certificate-wraper-cardWraper-card > img{
     max-width: 120px;
+}
+.certificate-wraper-cardWraper-card > p > a{
+    color: #4d0096;
 }
 
 .contact{
