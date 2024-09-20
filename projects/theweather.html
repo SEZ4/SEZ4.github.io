@@ -29,17 +29,17 @@
                 <div>
                     <a href="https://www.ventusky.com" target="_blank">Full Map</a>
                     <p>The Ventusky Weather Map</p>
-                    <button id="popup-close-button"><img src="theweather/images/global/close.png"></button>
+                    <button id="popup-close-button" name="Weather Map Close Button" aria-label="Weather map Close Button"><img src="theweather/images/global/close.png" alt="Weather map close button"></button>
                 </div>
                 <iframe src="https://www.ventusky.com" title="Ventusky Map"></iframe>
             </div>
         </div>
         <nav>
-            <a href="https://sez4.github.io/projects"><img src="theweather/images/global/back_button.png" alt="Back button"></a>
+            <a href="https://sez4.github.io/projects"><img src="theweather/images/global/back_button.png" alt="Back to Projects Button"></a>
             <div>
-                <button class="nav-hidden-button" name="The Map Button" id="map-button2"><img src="theweather/images/global/map.png"></button>
-                <button class="nav-hidden-button" name="The refresh Button" id="refresh-button2"><img src="theweather/images/global/refresh-arrow.png"></button>
-                <button id="cityButtons-menu-button">
+                <button class="nav-hidden-button" name="The Map Button" id="map-button2" aria-label="Open Weather map Button"><img src="theweather/images/global/map.png" alt="open Weather map Button"></button>
+                <button class="nav-hidden-button" name="The refresh Button" id="refresh-button2" aria-label="Refresh info button"><img src="theweather/images/global/refresh-arrow.png" alt="Refresh info button"></button>
+                <button id="cityButtons-menu-button" aria-label="Open city menu button">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -50,36 +50,36 @@
         <div class="main">
             <div class="cityButton">
                 <div class="cityButton-search">
-                    <button id="search-city-button"><img src="theweather/images/global/search-icon.png" alt="search icon"></button>
-                    <input type="text" name="search text felid" id="search-city-input" autocomplete="off">
+                    <button id="search-city-button" name="Find City Button" aria-label="Click to search city"><img src="theweather/images/global/search-icon.png" alt="Click to search city"></button>
+                    <input type="text" name="search text felid" id="search-city-input" autocomplete="off" aria-label="Type City name">
                     <p id="search-error"></p>
                 </div>
                 <div class="cityButton-buttons">
-                    <button class="city-button-name">
+                    <button class="city-button-name" aria-label="Amman City">
                         <img src="" alt="">
                         <p>Amman</p>
                     </button>
-                    <button class="city-button-name">
+                    <button class="city-button-name" aria-label="London City">
                         <img src="" alt="">
                         <p>London</p>
                     </button>
-                    <button class="city-button-name">
+                    <button class="city-button-name" aria-label="Kabul City">
                         <img src="" alt="">
                         <p>Kabul</p>
                     </button>
-                    <button class="city-button-name">
+                    <button class="city-button-name" aria-label="New York City">
                         <img src="" alt="">
                         <p>New York</p>
                     </button>
-                    <button class="city-button-name">
+                    <button class="city-button-name" aria-label="Makkah City">
                         <img src="" alt="">
                         <p>Makkah</p>
                     </button>
-                    <button class="city-button-name">
+                    <button class="city-button-name" aria-label="Tokyo City">
                         <img src="" alt="">
                         <p>Tokyo</p>
                     </button>
-                    <button class="city-button-name">
+                    <button class="city-button-name" aria-label="Algiers City">
                         <img src="" alt="">
                         <p>Algiers</p>
                     </button>
@@ -89,15 +89,15 @@
             <div class="cityInfo">
                 <div class="cityInfo-header">
                     <div class="cityInfo-header-info">
-                        <img src="theweather/images/day-night/day.png" alt="night day" id="day-status">
+                        <img src="theweather/images/day-night/day.png" alt="Coty Night or day Icon" id="day-status">
                         <p class="cityInfo-header-cityName" id="city-name"></p>
                         <p id="country-name"></p>
                         <p id="city-time"></p>
                         <p id="city-date"></p>
                     </div>
                     <div class="cityInfo-header-button">
-                        <button name="The Map Button" id="map-button"><img src="theweather/images/global/map.png"></button>
-                        <button name="The refresh Button" id="refresh-button"><img src="theweather/images/global/refresh-arrow.png"></button>
+                        <button name="The Map Button" id="map-button" aria-label="Open Weather map button"><img src="theweather/images/global/map.png" alt="Open Weather map Button"></button>
+                        <button name="The refresh Button" id="refresh-button" aria-label="Refresh info button"><img src="theweather/images/global/refresh-arrow.png" alt="Refresh info button "></button>
                     </div>
                 </div> 
                 <div class="cityInfo-current">
@@ -114,7 +114,7 @@
                     <h2>Wind</h2>
                     <div>
                         <div>
-                            <img src="theweather/images/global/wind-arrow.png" alt="arrow icon" id="wind-dir-img">
+                            <img src="theweather/images/global/wind-arrow.png" alt="Rotating Arrow for wind diraction" id="wind-dir-img">
                             <p id="wind-dir"></p>
                         </div>
                         <p id="wind-speed"></p>
@@ -131,7 +131,7 @@
                             <img src="" id="forecast-status-img-0">
                             <p id="forecast-status-0"></p>
                             <p id="forecast-temp-0"></p>
-                            <img src="theweather/images/global/wind-arrow.png" id="forecast-wind-dir-img-0">
+                            <img src="theweather/images/global/wind-arrow.png" alt="Rotating arrow for wind diraction" id="forecast-wind-dir-img-0">
                             <p id="forecast-wind-speed-0"></p>
                             <p id="forecast-date-0"></p>
                         </div>
@@ -139,7 +139,7 @@
                             <img src="" id="forecast-status-img-1">
                             <p id="forecast-status-1"></p>
                             <p id="forecast-temp-1"></p>
-                            <img src="theweather/images/global/wind-arrow.png" id="forecast-wind-dir-img-1">
+                            <img src="theweather/images/global/wind-arrow.png" alt="Rotating arrow for wind diraction" id="forecast-wind-dir-img-1">
                             <p id="forecast-wind-speed-1"></p>
                             <p id="forecast-date-1"></p>
                         </div>
@@ -147,7 +147,7 @@
                             <img src="" id="forecast-status-img-2">
                             <p id="forecast-status-2"></p>
                             <p id="forecast-temp-2"></p>
-                            <img src="theweather/images/global/wind-arrow.png" id="forecast-wind-dir-img-2">
+                            <img src="theweather/images/global/wind-arrow.png" alt="Rotating arrow for wind diraction" id="forecast-wind-dir-img-2">
                             <p id="forecast-wind-speed-2"></p>
                             <p id="forecast-date-2"></p>
                         </div>

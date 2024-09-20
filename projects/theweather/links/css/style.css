@@ -407,12 +407,12 @@ footer > p > span{
     color: var(--activeElements);
 }
 footer > p > a{
-    color: var(--linksColor);
+    color: #a68ebd;
 }
 footer > a{
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
-    color: var(--linksColor);
+    color: #a68ebd;
 }
 
 @media(max-width: 1440px){
