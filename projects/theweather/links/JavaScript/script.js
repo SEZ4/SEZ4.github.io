@@ -223,6 +223,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Overcast': { path: 'theweather/images/status/overcast.png', alt: 'Overcast icon'},
         'Overcast ': { path: 'theweather/images/status/overcast.png', alt: 'Overcast icon'},
         'Patchy rain nearby' : { path: 'theweather/images/status/Patchy rain nearby.png', alt: 'Patchy rain nearby icon'},
+        'Patchy light rain' : { path: 'theweather/images/status/Patchy rain nearby.png', alt: 'Patchy Light rain icon'},
         'Light rain': { path: 'theweather/images/status/light-rain.png', alt: 'Light Rain icon'},
         'Light drizzle': { path: 'theweather/images/status/light-rain.png', alt: 'Light Dizzle icon'},
         'Light rain shower': { path: 'theweather/images/status/light rain shower.png', alt: 'light rain shower icon'},
@@ -236,7 +237,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'Thundery outbreaks in nearby': { path: 'theweather/images/status/thunder.png', alt: 'thunder icon'},
         'Moderate or heavy rain shower': { path: 'theweather/images/status/light rain shower.png', alt: 'light rain shower icon', shorter: 'Moderate rain shower'},
         'Moderate or heavy rain with thunder': { path: 'theweather/images/status/thunder.png', alt: 'thunder icon', shorter: 'Moderate rain with thunder'},
-        'Patchy light drizzle': { path: 'theweather/images/status/light-rain.png', alt: 'Light rain icon'}
+        'Patchy light drizzle': { path: 'theweather/images/status/light-rain.png', alt: 'Light rain icon'},
+        'Light sleet': { path: 'theweather/images/status/light-rain.png', alt: 'Light sleet icon'}
     };
 
     // Logical Operations
