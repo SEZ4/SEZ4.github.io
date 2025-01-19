@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'Patchy light drizzle': { path: 'theweather/images/status/light-rain.png', alt: 'Light rain icon'},
         'Light sleet': { path: 'theweather/images/status/light-rain.png', alt: 'Light sleet icon'},
         'Heavy snow': { path: 'theweather/images/status/heavy snow.png', alt: 'Heavy Snow Icon'},
-        'Light freezing rain': { path: 'theweather/images/status/freezing-rain', alt: 'Light Freezing Rain'}
+        'Light freezing rain': { path: 'theweather/images/status/freezing-rain.png', alt: 'Light Freezing Rain'}
     };
 
     // Logical Operations
