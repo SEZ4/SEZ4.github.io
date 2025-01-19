@@ -238,7 +238,9 @@ document.addEventListener('DOMContentLoaded', function() {
         'Moderate or heavy rain shower': { path: 'theweather/images/status/light rain shower.png', alt: 'light rain shower icon', shorter: 'Moderate rain shower'},
         'Moderate or heavy rain with thunder': { path: 'theweather/images/status/thunder.png', alt: 'thunder icon', shorter: 'Moderate rain with thunder'},
         'Patchy light drizzle': { path: 'theweather/images/status/light-rain.png', alt: 'Light rain icon'},
-        'Light sleet': { path: 'theweather/images/status/light-rain.png', alt: 'Light sleet icon'}
+        'Light sleet': { path: 'theweather/images/status/light-rain.png', alt: 'Light sleet icon'},
+        'Heavy snow': { path: 'theweather/images/status/heavy snow.png', alt: 'Heavy Snow Icon'},
+        'Light freezing rain': { path: 'theweather/images/status/freezing-rain', alt: 'Light Freezing Rain'}
     };
 
     // Logical Operations
