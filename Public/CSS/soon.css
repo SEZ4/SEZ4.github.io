@@ -1,0 +1,115 @@
+:root{
+    --mainBackgroundColor: #1c1c1c;
+    --secondryBackgroundColor: #F5F5F5;
+    --mainTextColor: #FFF;
+    --secondryTextColor: #CCCCCC;
+    --secondryBackgroundTextColor: #1c1c1c;
+    --highlightTextColor: #8A2BE2;
+    --interactiveElements: #4B0082;
+    --hoverEffect: #7b7b7b;
+    --bordersColor: #333333;
+    --linksColor: #D8BFD8;
+    --warningColor: #ff0000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--mainBackgroundColor);
+    font-family: 'Open Sans', sans-serif;
+    scroll-snap-type: mandatory;
+}
+nav{
+    background-color: var(--secondryBackgroundColor);
+    border-bottom: 2px solid var(--bordersColor);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    top: 0;
+    z-index: 2;
+    transition: opacity 150ms ease-in-out;
+}
+.nav-navigation > a{
+    color: var(--secondryBackgroundTextColor);
+    margin-right: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 28px;
+    transition: color 150ms ease-in-out;
+}
+.nav-navigation > a:hover{
+    color: var(--hoverEffect);
+}
+.nav-social > a{
+    margin: 0 5px;
+}
+.nav-social > a > img{
+    width: 45px;
+    height: auto;
+    border-radius: 50%;
+    transition: background-color 150ms ease-in-out, opacity 150ms ease-in-out;
+    background-color: var(--secondryBackgroundColor);
+}
+.nav-social > a > img:hover{
+    background-color: var(--hoverEffect);
+}
+.nav-navigation > p{
+    display: none;
+    font-size: 28px;
+    color: var(--secondryBackgroundTextColor);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.nav-social > button{
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.nav-social > button > img{
+    width: 35px;
+    height: auto;
+}
+
+@keyframes navTrans{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.nav-transtion{
+    .nav-navigation > a,
+    .nav-social > a{
+        display: none;
+    }
+    .nav-social > button,
+    .nav-navigation > p{
+        display: block;
+    }
+    height: 60px;
+}
+
+.Coming-soon{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Coming-soon > h1{
+    color: var(--mainTextColor);
+    text-align: center;
+    font-style: italic;
+    font-family: "Momo Signature", cursive;
+    font-weight: 50;
+    font-size: 80px;
+}
+.Coming-soon > p{
+    margin-top: 20px;
+    color: var(--secondryTextColor);
+}
