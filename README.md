@@ -12,3 +12,7 @@
 * WCAG Compliance
 * JavaScript elements
 
+## Visit Now
+
+### Hosted a ran using GitHub Pages: https://sez4.github.io
+
